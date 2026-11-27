@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | LifeSaver</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">LifeSaver</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="find-donors.html">Find Donors</a></li>
+            <li><a href="register.html">Become a Donor</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="login-section">
+
+    <div class="login-container">
+
+        <div class="login-heading">
+            <p class="tagline">WELCOME BACK</p>
+            <h1>Login to LifeSaver</h1>
+            <p>Access your donor account.</p>
+        </div>
+
+        <form id="loginForm">
+
+            <div class="form-group">
+                <label for="loginEmail">Email Address</label>
+                <input type="email" id="loginEmail"
+                    placeholder="Enter your email"
+                    autocomplete="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    minlength="8" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary login-btn">
+                Login
+            </button>
+
+            <p id="loginMessage" role="status" aria-live="polite"></p>
+
+        </form>
+
+        <p class="register-link">
+            Don't have an account?
+            <a href="register.html">Register as a donor</a>
+        </p>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 LifeSaver. Built to make a difference.</p>
+</footer>
+
+<script src="../js/auth.js"></script>
+
+</body>
+</html>

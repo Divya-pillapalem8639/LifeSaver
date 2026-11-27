@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | LifeSaver</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">LifeSaver Admin</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="find-donors.html">Find Donors</a></li>
+            <li><button id="adminLogout" class="logout-btn">Logout</button></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="admin-section">
+
+    <div class="admin-heading">
+        <p class="tagline">ADMINISTRATION</p>
+        <h1>Admin Dashboard</h1>
+        <p>Monitor donor activity and platform statistics.</p>
+    </div>
+
+    <!-- Statistics -->
+    <section class="stats-grid">
+
+        <article class="stat-card">
+            <h3>Total Donors</h3>
+            <p id="totalDonors">4</p>
+        </article>
+
+        <article class="stat-card">
+            <h3>Available Donors</h3>
+            <p id="availableDonors">3</p>
+        </article>
+
+        <article class="stat-card">
+            <h3>Unavailable Donors</h3>
+            <p id="unavailableDonors">1</p>
+        </article>
+
+        <article class="stat-card">
+            <h3>Blood Groups</h3>
+            <p id="bloodGroups">3</p>
+        </article>
+
+    </section>
+
+    <!-- Donor Records -->
+    <section class="admin-table-section">
+
+        <h2>Donor Records</h2>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Donor ID</th>
+                        <th>Name</th>
+                        <th>Blood Group</th>
+                        <th>City</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+
+                <tbody id="adminDonorTable">
+                    <tr>
+                        <td>LS001</td>
+                        <td>Sample Donor 1</td>
+                        <td>O+</td>
+                        <td>Vijayawada</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>LS002</td>
+                        <td>Sample Donor 2</td>
+                        <td>A+</td>
+                        <td>Guntur</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>LS003</td>
+                        <td>Sample Donor 3</td>
+                        <td>B+</td>
+                        <td>Vijayawada</td>
+                        <td>Unavailable</td>
+                    </tr>
+
+                    <tr>
+                        <td>LS004</td>
+                        <td>Sample Donor 4</td>
+                        <td>O+</td>
+                        <td>Vijayawada</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 LifeSaver. Built to make a difference.</p>
+</footer>
+
+<script src="../js/admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Donor | LifeSaver</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">LifeSaver</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find-donors.html">Find Donors</a></li>
+                <li><a href="register.html">Become a Donor</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="registration-section">
+
+        <div class="registration-container">
+
+            <div class="registration-heading">
+                <p class="tagline">BECOME A LIFE SAVER</p>
+                <h1>Donor Registration</h1>
+                <p>Register as a voluntary blood donor and help save lives.</p>
+            </div>
+
+            <form id="donorForm">
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName"
+                        name="fullName" placeholder="Enter your full name"
+                        autocomplete="name" required>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age"
+                            min="18" max="65" placeholder="Enter age" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select gender</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="other">Other</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="bloodGroup">Blood Group</label>
+                        <select id="bloodGroup" name="bloodGroup" required>
+                            <option value="">Select blood group</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone"
+                            placeholder="10-digit mobile number"
+                            autocomplete="tel"
+                            pattern="[6-9][0-9]{9}"
+                            title="Enter a valid 10-digit Indian mobile number"
+                            required>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city"
+                        placeholder="Enter your city"
+                        autocomplete="address-level2" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address"
+                        rows="3" placeholder="Enter your address"
+                        autocomplete="street-address" required></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="availability"
+                        name="availability">
+                    <label for="availability">
+                        I am currently available to be contacted for donation.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-btn">
+                    Register as Donor
+                </button>
+
+                <p id="formMessage" role="status" aria-live="polite"></p>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LifeSaver. Built to make a difference.</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+
+</body>
+</html>

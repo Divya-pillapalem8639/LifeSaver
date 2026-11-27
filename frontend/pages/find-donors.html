@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Blood Donors | LifeSaver</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">LifeSaver</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="find-donors.html">Find Donors</a></li>
+            <li><a href="register.html">Become a Donor</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="search-section">
+
+    <div class="search-heading">
+        <p class="tagline">EVERY DONOR COUNTS</p>
+        <h1>Find Blood Donors</h1>
+        <p>Search for voluntary donors by blood group and location.</p>
+    </div>
+
+    <form id="searchForm" class="search-form">
+
+        <div class="form-group">
+            <label for="searchBloodGroup">Blood Group</label>
+            <select id="searchBloodGroup" required>
+                <option value="">Select blood group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="searchCity">City</label>
+            <input type="text" id="searchCity"
+                placeholder="Enter city" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary search-btn">
+            Search Donors
+        </button>
+
+    </form>
+
+    <div id="searchMessage" role="status" aria-live="polite"></div>
+
+    <section class="results-section">
+        <h2>Search Results</h2>
+
+        <div id="donorResults" class="donor-grid">
+            <p>Enter your search criteria to find donors.</p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 LifeSaver. Built to make a difference.</p>
+</footer>
+
+<script src="../js/donors.js"></script>
+
+</body>
+</html>

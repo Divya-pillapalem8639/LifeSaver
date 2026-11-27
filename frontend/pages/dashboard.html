@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Dashboard | LifeSaver</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">LifeSaver</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="find-donors.html">Find Donors</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><button id="logoutButton" class="logout-btn">Logout</button></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="dashboard-section">
+
+    <div class="dashboard-heading">
+        <p class="tagline">DONOR PORTAL</p>
+        <h1>Welcome to Your Dashboard</h1>
+        <p>Manage your donor profile and availability.</p>
+    </div>
+
+    <section class="dashboard-grid">
+
+        <article class="dashboard-card profile-card">
+            <h2>Donor Profile</h2>
+            <div class="blood-group-badge">O+</div>
+            <h3>Sample Donor</h3>
+            <p>Vijayawada, Andhra Pradesh</p>
+            <p>sample@example.com</p>
+        </article>
+
+        <article class="dashboard-card">
+            <h2>Donation Availability</h2>
+            <p>Let others know whether you are currently available for contact.</p>
+
+            <label class="availability-toggle">
+                <input type="checkbox" id="availabilityToggle" checked>
+                <span id="availabilityText">Available</span>
+            </label>
+        </article>
+
+        <article class="dashboard-card">
+            <h2>Donation History</h2>
+            <p id="historyMessage">
+                No donation history is available yet.
+            </p>
+        </article>
+
+        <article class="dashboard-card">
+            <h2>Account Information</h2>
+            <p>Account type: Donor</p>
+            <p>Profile status: Demo profile</p>
+            <p>Data source: Sample data</p>
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 LifeSaver. Built to make a difference.</p>
+</footer>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>
